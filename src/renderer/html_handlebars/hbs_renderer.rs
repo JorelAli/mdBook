@@ -257,38 +257,38 @@ impl HtmlHandlebars {
         write_file(destination, "clipboard.min.js", &theme.clipboard_js)?;
         write_file(
             destination,
-            "FontAwesome/css/font-awesome.css",
+            "fontawesome/css/fontawesome.css",
             theme::FONT_AWESOME,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/fontawesome-webfont.eot",
-            theme::FONT_AWESOME_EOT,
+            "fontawesome/css/brands.css",
+            theme::FONT_AWESOME_BRANDS,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/fontawesome-webfont.svg",
-            theme::FONT_AWESOME_SVG,
+            "fontawesome/css/solid.css",
+            theme::FONT_AWESOME_SOLID,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/fontawesome-webfont.ttf",
-            theme::FONT_AWESOME_TTF,
+            "fontawesome/webfonts/fa-brands-400.ttf",
+            theme::FONT_AWESOME_BRANDS_TTF,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/fontawesome-webfont.woff",
-            theme::FONT_AWESOME_WOFF,
+            "fontawesome/webfonts/fa-brands-400.woff2",
+            theme::FONT_AWESOME_BRANDS_WOFF2,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/fontawesome-webfont.woff2",
-            theme::FONT_AWESOME_WOFF2,
+            "fontawesome/webfonts/fa-solid-900.ttf",
+            theme::FONT_AWESOME_SOLID_TTF,
         )?;
         write_file(
             destination,
-            "FontAwesome/fonts/FontAwesome.ttf",
-            theme::FONT_AWESOME_TTF,
+            "fontawesome/webfonts/fa-solid-900.woff2",
+            theme::FONT_AWESOME_SOLID_WOFF2,
         )?;
         // Don't copy the stock fonts if the user has specified their own fonts to use.
         if html_config.copy_fonts && theme.fonts_css.is_none() {

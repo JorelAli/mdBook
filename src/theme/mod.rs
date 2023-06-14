@@ -29,14 +29,13 @@ pub static TOMORROW_NIGHT_CSS: &[u8] = include_bytes!("tomorrow-night.css");
 pub static HIGHLIGHT_CSS: &[u8] = include_bytes!("highlight.css");
 pub static AYU_HIGHLIGHT_CSS: &[u8] = include_bytes!("ayu-highlight.css");
 pub static CLIPBOARD_JS: &[u8] = include_bytes!("clipboard.min.js");
-pub static FONT_AWESOME: &[u8] = include_bytes!("FontAwesome/css/font-awesome.min.css");
-pub static FONT_AWESOME_EOT: &[u8] = include_bytes!("FontAwesome/fonts/fontawesome-webfont.eot");
-pub static FONT_AWESOME_SVG: &[u8] = include_bytes!("FontAwesome/fonts/fontawesome-webfont.svg");
-pub static FONT_AWESOME_TTF: &[u8] = include_bytes!("FontAwesome/fonts/fontawesome-webfont.ttf");
-pub static FONT_AWESOME_WOFF: &[u8] = include_bytes!("FontAwesome/fonts/fontawesome-webfont.woff");
-pub static FONT_AWESOME_WOFF2: &[u8] =
-    include_bytes!("FontAwesome/fonts/fontawesome-webfont.woff2");
-pub static FONT_AWESOME_OTF: &[u8] = include_bytes!("FontAwesome/fonts/FontAwesome.otf");
+pub static FONT_AWESOME: &[u8] = include_bytes!("fontawesome/css/fontawesome.min.css");
+pub static FONT_AWESOME_BRANDS: &[u8] = include_bytes!("fontawesome/css/brands.min.css");
+pub static FONT_AWESOME_SOLID: &[u8] = include_bytes!("fontawesome/css/solid.min.css");
+pub static FONT_AWESOME_BRANDS_TTF: &[u8] = include_bytes!("fontawesome/webfonts/fa-brands-400.ttf");
+pub static FONT_AWESOME_BRANDS_WOFF2: &[u8] = include_bytes!("fontawesome/webfonts/fa-brands-400.woff2");
+pub static FONT_AWESOME_SOLID_TTF: &[u8] = include_bytes!("fontawesome/webfonts/fa-solid-900.ttf");
+pub static FONT_AWESOME_SOLID_WOFF2: &[u8] = include_bytes!("fontawesome/webfonts/fa-solid-900.woff2");
 
 /// The `Theme` struct should be used instead of the static variables because
 /// the `new()` method will look if the user has a theme directory in their
